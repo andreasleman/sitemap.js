@@ -1,48 +1,3 @@
- <div id="table-outer">
-  <table>
-    <tbody>
-      <tr>
-        <td>
-          <label for="feed-order">Urutkan artikel berdasarkan:</label>
-        </td>
-        <td>
-          <select id="feed-order">
-            <option selected="" value="published">Artikel terbaru</option>
-            <option value="updated">Artikel yang terakhir di update</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <label for="label-sorter">Filter artikel berdasarkan kategori:</label>
-        </td>
-        <td>
-          <select disabled="" id="label-sorter">
-            <option selected="">Loading....</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <label for="feed-q">Cari artikel dengan kata kunci:</label>
-        </td>
-        <td>
-          <form id="post-searcher">
-            <input id="feed-q" placeholder="Ketik dan tekan ENTER" type="text" />
-          </form>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<br />
-<header id="result-desc"></header>
-<br />
-<ul id="feed-container"></ul>
-<div id="feed-nav">
-</div>
- 
- <script type="text/javascript">
 // Get the head element
 var head = document.head || document.getElementsByTagName('head')[0];
 
@@ -60,9 +15,7 @@ style.appendChild(document.createTextNode(css));
 
 // Append the style node to the head of the page
 head.appendChild(style); 
-  </script>
-
-<script type='text/javaScript'>
+ 
 document.write;
 var loadToc, loadCategories, _toc = {
     init: function() {
@@ -215,4 +168,4 @@ var loadToc, loadCategories, _toc = {
         };
     }
 };
-_toc.init();</script>
+_toc.init();
